@@ -24,23 +24,24 @@ flex: 0 0 auto;
 a{
   display: inline-block;
   text-decoration: none;
-  color: $text;
+  color: #fff;
 }
 ul,
 li{
   margin: 0;
   padding: 0;
   list-style: none;
+  display: inline-block;
 }
 .container{
-  max-width: 1760px;
+  max-width: 1076px;
   margin: 0 auto;
   padding: 0 20px;
 }
 body{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Century Gothic', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: $text;
+  color: #fff;
 }
