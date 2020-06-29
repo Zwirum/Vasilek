@@ -199,15 +199,17 @@
   margin-bottom: 40px;
 }
 .price__item-image{
-  border: 1px solid #000;
-  max-height: 175px; 
+  max-height: 173px; 
   margin-bottom: 5px;
   img{
     max-width: 225px;
-    max-height: 173px;
+    max-height: 174px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    &:hover{
+      border: 1px solid #000;
+    }
   }
 }
 .price__item-title{
@@ -346,4 +348,79 @@
   color: $bg;
 }
 //photo end
+
+//footer start
+.footer{
+  box-shadow: 0px 8px 57.72px 16.28px rgba(0, 0, 0, 1.004); 
+}
+.footer-top{
+  min-height: 355px;
+  padding-top: 65px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer-top__inner{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer__about{
+  max-width: 300px;
+}
+.footer__title{
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.footer__company{
+  max-width: 230px;
+}
+.footer__company-list{
+  padding-left: 25px;
+  li{
+    display: block;
+    position: relative;
+    margin-bottom: 25px;
+    &::before{
+      position: absolute;
+      content: "";
+      background-image: url(../images/icons/flower.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 30px;
+      width: 18px;
+      top: 0;
+      left: -25px;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+}
+.footer__oplata-items{
+  max-width: 285px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer__oplata-item{
+  max-height: 40px;
+  margin-bottom: 25px;
+  margin-right: 10px;
+}
+.footer-bottom{
+  background-color: #000;
+  min-height: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  .footer-bottom__text{
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+//footer end
 @import 'media';
