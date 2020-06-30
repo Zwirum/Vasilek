@@ -25,8 +25,10 @@
   background-repeat: no-repeat;
 }
 .menu{
-  padding-top: 20px;
   font-size: 16px;
+  .menu__list{
+    padding-top: 20px;
+  }
   .menu__list-item{
     & + .menu__list-item{
       margin-left: 14px;
@@ -100,6 +102,17 @@
     }
   }
 }
+.menu__btn{
+  cursor: pointer;
+  display: none;
+}
+.menu__btn-line{
+  height: 4px;
+  width: 30px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  border-radius: 3px;
+}
 //header end
 
 //slider start
@@ -134,6 +147,9 @@
   }
 }
 .slider__item{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 215px;
   height: 700px;
   .slider__title{
@@ -254,8 +270,7 @@
 
 //photo start
 .photo{
-  padding-top: 65px;
-  padding-bottom: 115px;
+  padding: 65px 15px 115px 15px;
   text-align: center;
   align-items: center;
 }
@@ -271,6 +286,33 @@
   max-width: 1235px;
   margin: 0 auto;
   margin-bottom: 75px;
+  .slick-dots{
+    display: none;
+    position: absolute;
+    bottom: -30px;
+    left: 40%;
+    li{
+      & + li{
+        margin-left: 17px;
+      }
+      &.slick-active{
+        button{
+          background-color: #fff;
+          border: 2px solid $bg;
+        }
+      }
+      button{
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 50%;
+        background-color: $bg;
+        height: 20px;
+        width: 20px;
+        font-size: 0;
+      }
+    }
+  }
   .slick-slide{
     width: 380px !important;
     & + .slick-slide{
@@ -368,13 +410,17 @@
 .footer__about{
   max-width: 300px;
 }
+.footer__about-text{
+  max-width: 250px;
+  font-size: 12px;
+}
 .footer__title{
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 25px;
 }
 .footer__company{
-  max-width: 230px;
+  max-width: 175px;
 }
 .footer__company-list{
   padding-left: 25px;

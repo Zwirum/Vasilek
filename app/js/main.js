@@ -1,7 +1,7 @@
 $(function(){
   $('.slider').slick({
-    autoplay: true,
-    autoplaySpeed: 5000,
+    // autoplay: true,
+    // autoplaySpeed: 5000,
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -14,11 +14,15 @@ $(function(){
     slidesToScroll: 1,
     focusOnSelect:true,
     infinite:false,
+    dots: true,
   });  
   $('[data-fancybox="images"]').fancybox({
     buttons: [
       "zoom",
       "close"
     ],
+  });
+  $('.menu__btn').on('click', function(){
+    $('.menu__list').slideToggle();
   });
 });
